@@ -144,10 +144,6 @@ grid-area: productos-box-1;background-color: rgb(222, 198, 245);
 }
 
 
-
-
-
-
 .destacados{
     margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -175,16 +171,36 @@ grid-area: productos-box-1;background-color: rgb(222, 198, 245);
 
 }
 .productos-destacados{
-    padding-top: 20px;
+    margin: 40px;
+    padding: 20px;
     display: flex;
+    text-align:center;
+    background-color:white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-
-
-
-
 }
 
+.productos-destacados-1{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+.productos-destacados-2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+.productos-destacados-3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
 .formulario-gral{
     background-color: beige;
     background-image: url(../assets/Rectangle32.png);
@@ -319,22 +335,6 @@ grid-area: productos-box-1;background-color: rgb(222, 198, 245);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-@media (max-width: 768px){
-.card-principal{
-    grid-template-columns: repeat 1fr;
-    grid-template-rows: repeat (2, 1fr);
-    grid-template-areas: 
-    "cardprincipal"
-    "cardprincipal"
-    ;
-    background-color: rgb(235, 103, 103);
-}
-
-.card-secundaria{
-    background-color: rgb(241, 150, 150);
-}
 }
 
 @media (max-width: 576px){
