@@ -47,7 +47,7 @@ box-sizing: border-box;
 }
 
 .contactos{
-    background-color: rgb(188, 227, 245);
+    background-color:rgb(243, 198, 220);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -63,25 +63,25 @@ box-sizing: border-box;
     display: flex;
     display:block;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: rgb(189, 126, 248);
 }
 
 .contacto-direccion{
     display: flex;
     display: block;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: rgb(189, 126, 248);
 }
 
 .contacto-horarios{
     display: block;
     flex-direction: column;
-background-color: blueviolet;
+background-color: rgb(189, 126, 248);
 }
 
 .contacto-pagos{
     display: block;
-    background-color: blueviolet;
+    background-color: rgb(189, 126, 248);
     flex-direction: column;
 }
 
@@ -118,29 +118,38 @@ background-color: blueviolet;
 
 .productos-box-1{
     margin: 20px;
-grid-area: productos-box-1;background-color: rgb(222, 198, 245);
+    grid-area: productos-box-1;background-color: rgb(222, 198, 245);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .productos-box-2{
     margin: 20px;
     grid-area: productos-box-2;
     background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 .productos-box-3{
     margin: 20px;
     grid-area: productos-box-3;
     background-color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 .productos-box-4{
     margin: 20px;
     grid-area: productos-box-4;
     background-color: rgb(209, 255, 162);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .productos-box-5{
     margin: 20px;
     grid-area: productos-box-5;
     background-color: rgb(169, 194, 240);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 
@@ -206,6 +215,8 @@ grid-area: productos-box-1;background-color: rgb(222, 198, 245);
     background-image: url(../assets/Rectangle32.png);
     background-position: center;
     padding-bottom: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 .formulario{
     margin: 20px;
@@ -349,7 +360,12 @@ grid-area: productos-box-1;background-color: rgb(222, 198, 245);
     background-color: black;
 }
 .card-secundaria{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas:
+    "cardprincipal"
+    "cardprincipal"
+;
     background-color: black;
 }
 }
-
