@@ -1,0 +1,355 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; 
+}
+.header{
+    background-color: rgb(218, 182, 252);
+}
+
+.logo-principal{
+    display: inline;
+
+}
+
+.nav-bar-flex{
+    margin: 0px;
+    background-color: rgb(218, 182, 252);
+    display: flex; 
+    justify-content: flex-end;
+    gap: 50px;
+    list-style: none;
+    text-decoration:none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif 
+}
+
+
+
+
+.card-principal{
+    padding-top: 20px;
+    background-color: beige;
+    display: flex; justify-content: center; 
+
+}
+
+.card-secundaria{
+    padding-top: 20px;
+    background-color: aliceblue;
+    display: flex; justify-content: center;
+}
+
+.contacto-principal{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contactos{
+    background-color: rgb(188, 227, 245);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.contacto-redes{
+    display: flex;
+    display:block;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+
+.contacto-direccion{
+    display: flex;
+    display: block;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+
+.contacto-horarios{
+    display: block;
+    flex-direction: column;
+background-color: blueviolet;
+}
+
+.contacto-pagos{
+    display: block;
+    background-color: blueviolet;
+    flex-direction: column;
+}
+
+.main{
+    background-image: url(../assets/Rectangle32.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.buscar-productos{
+    margin: 20px;
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.productos{
+    font-size:x-large;
+    display: grid;
+    width: 70%;
+    height: 50vh;
+    grid-template-columns: repeat (5,1fr);
+    grid-template-rows: repeat (5,1fr);
+    grid-template-areas: 
+    "productos-box-1 productos-box-1 productos-box-1 productos-box-1 productos-box-1"
+    "productos-box-2 productos-box-2 productos-box-2 productos-box-2 productos-box-2"
+    "productos-box-3 productos-box-3 productos-box-3 productos-box-3 productos-box-3"
+    "productos-box-4 productos-box-4 productos-box-4 productos-box-4 productos-box-4"
+    "productos-box-5 productos-box-5 productos-box-5 productos-box-5 productos-box-5"
+    ;
+
+}
+
+.productos-box-1{
+    margin: 20px;
+grid-area: productos-box-1;background-color: rgb(222, 198, 245);
+}
+
+.productos-box-2{
+    margin: 20px;
+    grid-area: productos-box-2;
+    background-color: aliceblue;
+}
+.productos-box-3{
+    margin: 20px;
+    grid-area: productos-box-3;
+    background-color: bisque;
+}
+.productos-box-4{
+    margin: 20px;
+    grid-area: productos-box-4;
+    background-color: rgb(209, 255, 162);
+}
+
+.productos-box-5{
+    margin: 20px;
+    grid-area: productos-box-5;
+    background-color: rgb(169, 194, 240);
+}
+
+
+
+
+
+
+.destacados{
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-destacados{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.banner{
+    
+    background-color: beige;
+    display:block;
+    background-image: url(../assets/Rectangle32.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    
+
+}
+.productos-destacados{
+    padding-top: 20px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+
+
+
+
+}
+
+.formulario-gral{
+    background-color: beige;
+    background-image: url(../assets/Rectangle32.png);
+    background-position: center;
+    padding-bottom: 70px;
+}
+.formulario{
+    margin: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-ysc{
+    padding-top: 10px;
+    margin: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-datos{
+    padding-top: 10px;
+    margin: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.carrito{
+    background-color: rgb(218, 182, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:overline;
+
+}
+
+
+@media (max-width: 768px){
+.productos{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+"productos-box-1 productos-box-1 productos-box-1"
+"productos-box-2 productos-box-2 productos-box-2"
+"productos-box-3 productos-box-3 productos-box-3"
+;
+}
+.productos-box-1{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+.productos-box-2{
+    background-color:aliceblue ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.productos-box-3{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+.productos-box-4{
+    background-color:aliceblue ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.productos-box-5{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+}
+
+@media (max-width: 576px){
+.productos{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (5, 1fr);
+    grid-template-areas: 
+    "productos-box-1"
+    "productos-box-2"
+    "productos-box-3"
+    "productos-box-4"
+    "productos-box-5"
+;
+}
+
+.productos-box-1{
+    background-color:lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.productos-box-2{
+    background-color:lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.productos-box-3{
+    background-color:lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.productos-box-4{
+    background-color:lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.productos-box-5{
+    background-color:lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+.card-principal{
+    grid-template-columns: repeat 1fr;
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas: 
+    "cardprincipal"
+    "cardprincipal"
+    ;
+    background-color: rgb(235, 103, 103);
+}
+
+.card-secundaria{
+    background-color: rgb(241, 150, 150);
+}
+}
+
+@media (max-width: 576px){
+.card-principal{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas:
+    "cardprincipal"
+    "cardprincipal"
+;
+
+    background-color: black;
+}
+.card-secundaria{
+    background-color: black;
+}
+}
+
