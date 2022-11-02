@@ -1,0 +1,40 @@
+.productos{
+    font-size:x-large;
+    @include products-decoration;
+    display: grid;
+    width: 70%;
+    height: 50vh;
+    grid-template-columns: repeat (5,1fr);
+    grid-template-rows: repeat (5,1fr);
+    grid-template-areas: 
+    "productos-box-1 productos-box-1 productos-box-1 productos-box-1 productos-box-1"
+    "productos-box-2 productos-box-2 productos-box-2 productos-box-2 productos-box-2"
+    "productos-box-3 productos-box-3 productos-box-3 productos-box-3 productos-box-3"
+    "productos-box-4 productos-box-4 productos-box-4 productos-box-4 productos-box-4"
+    "productos-box-5 productos-box-5 productos-box-5 productos-box-5 productos-box-5"
+    ;
+
+}
+
+.productos-box-1{
+    @include products-decoration;
+}
+
+.productos-box-2{
+    @include products-decoration;
+
+}
+.productos-box-3{
+    @include products-decoration;
+
+}
+.productos-box-4{
+    @include products-decoration;
+
+}
+
+.productos-box-5{
+    @include products-decoration;
+
+}
+

@@ -1,0 +1,58 @@
+.titulo-destacados{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.banner{
+    background-color: beige;
+    display:block;
+    background-image: url(../assets/fondodest.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    
+
+}
+.productos-destacados {
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "productos-destacados-1" "productos-destacados-2" "productos-destacados-3";
+    text-align: center;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.productos-destacados-1{
+    padding-top: 30px;
+    display: flex;
+    grid-area: productos-destacados-1;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+.productos-destacados-2{
+    display: flex;
+    grid-area: productos-destacados-2;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+.productos-destacados-3{
+    display: flex;
+    grid-area: productos-destacados-3;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}

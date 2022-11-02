@@ -1,0 +1,14 @@
+@mixin props-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin products-decoration{
+    margin: 20px;
+    grid-area: productos-box-1;
+    background-color: rgb(222, 198, 245);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}

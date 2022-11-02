@@ -1,0 +1,31 @@
+.formulario-gral{
+    background-color: beige;
+    background-image: url(../assets/Rectangle32.png);
+    background-position: center;
+    padding-bottom: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.formulario{
+    margin: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-ysc{
+    @extend .formulario;
+}
+
+.formulario-datos{
+    @extend .formulario;
+
+}
+
+.carrito{
+    background-color: rgb(218, 182, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:overline;
+
+}

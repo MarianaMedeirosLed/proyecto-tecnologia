@@ -1,0 +1,25 @@
+header{
+    width: 100%;
+    display: flex;
+    background-color: black;
+        .logo-principal{
+            display: flex;
+            display: inline;
+        }
+    }
+nav{
+    background-color: black;
+}
+.nav-bar-flex{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: beige;
+            font-size: x-large;
+        }
+    }
+}

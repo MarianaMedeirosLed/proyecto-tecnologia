@@ -1,0 +1,22 @@
+.contacto-principal{
+    text-align: center;
+    text-decoration: double;
+}
+
+.contacto-redes{
+    display: flex;
+    display: block;
+    flex-direction: column;
+    flex: wrap;
+    background-color: lightblue;
+}
+
+.contacto-direccion{
+   @extend .contacto-redes;
+}
+.contacto-horarios{
+    @extend .contacto-redes;
+}
+.contacto-pagos{
+    @extend .contacto-redes;
+} 

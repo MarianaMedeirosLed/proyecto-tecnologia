@@ -1,382 +1,242 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box; 
-}
-.header{
-    width: 100%;
+* {
+  margin: 0%;
+  padding: 0%; }
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: black; }
+  header .logo-principal {
     display: flex;
-    background-color: rgb(218, 182, 252);
-}
+    display: inline; }
 
-.logo-principal{
+nav {
+  background-color: black; }
+
+.nav-bar-flex {
+  display: flex;
+  justify-content: center;
+  gap: 70px; }
+  .nav-bar-flex li {
+    list-style: none; }
+    .nav-bar-flex li a {
+      text-decoration: none;
+      color: beige;
+      font-size: x-large; }
+
+.card-principal {
+  display: flex;
+  justify-content: center;
+  background-color: black; }
+
+.card-secundaria {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray; }
+
+.contacto-principal {
+  text-align: center;
+  text-decoration: double; }
+
+.contacto-redes, .contacto-direccion, .contacto-horarios, .contacto-pagos {
+  display: flex;
+  display: block;
+  flex-direction: column;
+  flex: wrap;
+  background-color: lightblue; }
+
+.main {
+  background-color: #dec6f5; }
+
+.buscar-productos {
+  margin: 20px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.productos {
+  font-size: x-large;
+  margin: 20px;
+  grid-area: productos-box-1;
+  background-color: #dec6f5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: grid;
+  width: 70%;
+  height: 50vh;
+  grid-template-columns: repeat 5, 1fr;
+  grid-template-rows: repeat 5, 1fr;
+  grid-template-areas: "productos-box-1 productos-box-1 productos-box-1 productos-box-1 productos-box-1" "productos-box-2 productos-box-2 productos-box-2 productos-box-2 productos-box-2" "productos-box-3 productos-box-3 productos-box-3 productos-box-3 productos-box-3" "productos-box-4 productos-box-4 productos-box-4 productos-box-4 productos-box-4" "productos-box-5 productos-box-5 productos-box-5 productos-box-5 productos-box-5"; }
+
+.productos-box-1 {
+  margin: 20px;
+  grid-area: productos-box-1;
+  background-color: #dec6f5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.productos-box-2 {
+  margin: 20px;
+  grid-area: productos-box-1;
+  background-color: #dec6f5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.productos-box-3 {
+  margin: 20px;
+  grid-area: productos-box-1;
+  background-color: #dec6f5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.productos-box-4 {
+  margin: 20px;
+  grid-area: productos-box-1;
+  background-color: #dec6f5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.productos-box-5 {
+  margin: 20px;
+  grid-area: productos-box-1;
+  background-color: #dec6f5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.titulo-destacados {
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.banner {
+  background-color: beige;
+  display: block;
+  background-image: url(../assets/fondodest.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.productos-destacados {
+  margin: 40px;
+  padding: 20px;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "productos-destacados-1" "productos-destacados-2" "productos-destacados-3";
+  text-align: center;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium; }
+
+.productos-destacados-1 {
+  padding-top: 30px;
+  display: flex;
+  grid-area: productos-destacados-1;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: x-large; }
+
+.productos-destacados-2 {
+  display: flex;
+  grid-area: productos-destacados-2;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: x-large; }
+
+.productos-destacados-3 {
+  display: flex;
+  grid-area: productos-destacados-3;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: x-large; }
+
+.formulario-gral {
+  background-color: beige;
+  background-image: url(../assets/Rectangle32.png);
+  background-position: center;
+  padding-bottom: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large; }
+
+.formulario, .formulario-ysc, .formulario-datos {
+  margin: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.carrito {
+  background-color: #dab6fc;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: overline; }
+
+@media (max-width: 768px) {
+  .header {
+    background-color: black; }
+  .logo-principal {
     display: flex;
-    display: inline;
-
-
-}
-
-.nav-bar-flex{
+    display: inline; }
+  .nav-bar-flex {
     margin: 0%;
     padding: 0px;
-    background-color: rgb(218, 182, 252);
-    display: flex; 
-    justify-content: center;
-    gap: 30px;
-    list-style: none;
-    text-decoration:none;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif 
-}
-
-.grid-container{
-    display: grid;
-}
-.grid-container div:first-child{
-    background-color: black;
-}
-
-
-.card-principal{
-    padding-top: 20px;
-    background-color: beige;
-    display: flex; justify-content: center; 
-
-}
-
-.card-secundaria{
-    padding-top: 20px;
-    background-color: aliceblue;
-    display: flex; justify-content: center;
-}
-
-.contacto-principal{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.contactos{
-    background-color:rgb(243, 198, 220);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-
-}
-
-.contacto-redes{
-    display: flex;
-    display:block;
-    flex-direction: column;
-    background-color: rgb(189, 126, 248);
-}
-
-.contacto-direccion{
-    display: flex;
-    display: block;
-    flex-direction: column;
-    background-color: rgb(189, 126, 248);
-}
-
-.contacto-horarios{
-    display: block;
-    flex-direction: column;
-background-color: rgb(189, 126, 248);
-}
-
-.contacto-pagos{
-    display: block;
-    background-color: rgb(189, 126, 248);
-    flex-direction: column;
-}
-
-.main{
-    background-image: url(../assets/fondodest.jpg);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.buscar-productos{
-    margin: 20px;
-    text-align:left;
-    font-family: Arial, Helvetica, sans-serif;
-
-
-}
-.productos{
-    font-size:x-large;
-    display: grid;
-    width: 70%;
-    height: 50vh;
-    grid-template-columns: repeat (5,1fr);
-    grid-template-rows: repeat (5,1fr);
-    grid-template-areas: 
-    "productos-box-1 productos-box-1 productos-box-1 productos-box-1 productos-box-1"
-    "productos-box-2 productos-box-2 productos-box-2 productos-box-2 productos-box-2"
-    "productos-box-3 productos-box-3 productos-box-3 productos-box-3 productos-box-3"
-    "productos-box-4 productos-box-4 productos-box-4 productos-box-4 productos-box-4"
-    "productos-box-5 productos-box-5 productos-box-5 productos-box-5 productos-box-5"
-    ;
-
-}
-
-.productos-box-1{
-    margin: 20px;
-    grid-area: productos-box-1;background-color: rgb(222, 198, 245);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.productos-box-2{
-    margin: 20px;
-    grid-area: productos-box-2;
-    background-color: aliceblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-.productos-box-3{
-    margin: 20px;
-    grid-area: productos-box-3;
-    background-color: bisque;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-.productos-box-4{
-    margin: 20px;
-    grid-area: productos-box-4;
-    background-color: rgb(209, 255, 162);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-.productos-box-5{
-    margin: 20px;
-    grid-area: productos-box-5;
-    background-color: rgb(169, 194, 240);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-
-.destacados{
-    margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.titulo-destacados{
-    text-align: center;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.banner{
-    
-    background-color: beige;
-    display:block;
-    background-image: url(../assets/fondodest.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-
-    
-
-}
-.productos-destacados{
-    margin: 40px;
-    padding: 20px;
-    display: flex;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "productos-destacados-1"
-    "productos-destacados-2"
-    "productos-destacados-3"
-    ;
-    text-align:center;
-    background-color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-}
-
-.productos-destacados-1{
-    padding-top: 30px;
-    display: flex;
-    grid-area: productos-destacados-1;
-    justify-content: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-large;
-}
-
-.productos-destacados-2{
-    display: flex;
-    grid-area: productos-destacados-2;
-    justify-content: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-large;
-}
-
-.productos-destacados-3{
-    display: flex;
-    grid-area: productos-destacados-3;
-    justify-content: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-large;
-}
-.formulario-gral{
-    background-color: beige;
-    background-image: url(../assets/Rectangle32.png);
-    background-position: center;
-    padding-bottom: 70px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-}
-.formulario{
-    margin: 20px;
-    width: 200px;
+    justify-self: auto;
+    background-color: black; }
+  .card-principal {
+    background-image: url(../assets/fondodest.jpg); }
+  .card-secundaria {
+    background-color: white; }
+  .contactos {
+    background-color: lightblue; }
+  .contacto-redes, .contacto-direccion, .contacto-horarios, .contacto-pagos {
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.formulario-ysc{
-    padding-top: 10px;
-    margin: 20px;
-    width: 200px;
+    background-color: royalblue; }
+  .contacto-direccion {
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.formulario-datos{
-    padding-top: 10px;
-    margin: 20px;
-    width: 200px;
+    background-color: royalblue; }
+  .contacto-horarios {
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.carrito{
-    background-color: rgb(218, 182, 252);
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration:overline;
-
-}
-
-
-@media (max-width: 768px){
-    .header{
-        background-color: black;
-    }
-    .logo-principal{
-        display: flex;
-        display: inline;
-    }
-    
-    .nav-bar-flex{
-        margin: 0%;
-        padding: 0px;
-        display: flex;
-        justify-self: auto;
-        background-color: black; 
-    }
-
-    .card-principal{
-        background-image: url(../assets/fondodest.jpg);
-    }
-    .card-secundaria{
-        background-color: white;
-        
-    }
-    .contactos{
-        background-color: lightblue;
-    }
-    .contacto-redes{
-        display: flex;
-        flex-direction: column;
-        background-color:royalblue;
-    }
-    
-    .contacto-direccion{
-        display: flex;
-        flex-direction: column;
-        background-color: royalblue;
-    }
-    
-    .contacto-horarios{
-        display: flex;
-        flex-direction: column;
-        background-color: royalblue;
-    }
-    
-    .contacto-pagos{
-        display: flex;
-        flex-direction: column;
-        background-color: royalblue;
-    }
-    
-.productos{
+    background-color: royalblue; }
+  .contacto-pagos {
+    display: flex;
+    flex-direction: column;
+    background-color: royalblue; }
+  .productos {
     width: 100%;
     height: 100vh;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-"productos-box-1 productos-box-1 productos-box-1"
-"productos-box-2 productos-box-2 productos-box-2"
-"productos-box-3 productos-box-3 productos-box-3"
-;
-background-image: url(../assets/fondodest.jpg);
-}
-.productos-box-1{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "productos-box-1 productos-box-1 productos-box-1" "productos-box-2 productos-box-2 productos-box-2" "productos-box-3 productos-box-3 productos-box-3";
+    background-image: url(../assets/fondodest.jpg); }
+  .productos-box-1 {
     background-color: aliceblue;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-}
-
-.productos-box-2{
-    background-color:aliceblue ;
+    font-size: x-large; }
+  .productos-box-2 {
+    background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
     display: flex;
-    justify-content: center;
-}
-
-.productos-box-3{
+    justify-content: center; }
+  .productos-box-3 {
     background-color: aliceblue;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-}
-
-.productos-box-4{
-    background-color:aliceblue ;
+    font-size: x-large; }
+  .productos-box-4 {
+    background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
     display: flex;
-    justify-content: center;
-}
-
-.productos-box-5{
+    justify-content: center; }
+  .productos-box-5 {
     background-color: aliceblue;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-}
-.productos-destacados{
+    font-size: x-large; }
+  .productos-destacados {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -384,125 +244,87 @@ background-image: url(../assets/fondodest.jpg);
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "productos-destacados-1"
-    "productos-destacados-2"
-    "productos-destacados-3"
-    ;
-}
-.banner{
-    background-image: url(../assets/fondodest.jpg);
-}
-.productos-destacados-1{
+    grid-template-areas: "productos-destacados-1" "productos-destacados-2" "productos-destacados-3"; }
+  .banner {
+    background-image: url(../assets/fondodest.jpg); }
+  .productos-destacados-1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.productos-destacados-2{
+    align-items: center; }
+  .productos-destacados-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.productos-destacados-3{
+    align-items: center; }
+  .productos-destacados-3 {
     display: flex;
     flex-direction: column;
-align-items: center;
-}
-}
+    align-items: center; } }
 
-@media (max-width: 576px){
-    .header{
-        background-color: black;
-    }
-
-    .nav-bar-flex{
-        margin: 0%;
-        padding: 0px;
-        display: flex;
-        flex-direction:column;
-        justify-content:center;
-        background-color: black; 
-    }
-    .logo-principal{
-        display: flex;
-        display: inline;
-    }
-    
-    .card-principal{
-        background-color:darkgray;
-    }
-    .card-secundaria{
-        background-color: white;
-    }
-    .contactos{
-        background-color: aliceblue;
-    }
-    .contacto-redes{
-        display: flex;
-        flex-direction: column;
-        background-color:royalblue
-    }
-    
-    .contacto-direccion{
-        display: flex;
-        flex-direction: column;
-        background-color: royalblue;
-    }
-    
-    .contacto-horarios{
-        display: flex;
-        flex-direction: column;
-        background-color: royalblue;
-    }
-    
-    .contacto-pagos{
-        display: flex;
-        flex-direction: column;
-        background-color: royalblue;
-    }
-.productos{
+@media (max-width: 576px) {
+  .header {
+    background-color: black; }
+  .nav-bar-flex {
+    margin: 0%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black; }
+  .logo-principal {
+    display: flex;
+    display: inline; }
+  .card-principal {
+    background-color: darkgray; }
+  .card-secundaria {
+    background-color: white; }
+  .contactos {
+    background-color: aliceblue; }
+  .contacto-redes, .contacto-direccion, .contacto-horarios, .contacto-pagos {
+    display: flex;
+    flex-direction: column;
+    background-color: royalblue; }
+  .contacto-direccion {
+    display: flex;
+    flex-direction: column;
+    background-color: royalblue; }
+  .contacto-horarios {
+    display: flex;
+    flex-direction: column;
+    background-color: royalblue; }
+  .contacto-pagos {
+    display: flex;
+    flex-direction: column;
+    background-color: royalblue; }
+  .productos {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat (5, 1fr);
-    grid-template-areas: 
-    "productos-box-1"
-    "productos-box-2"
-    "productos-box-3"
-    "productos-box-4"
-    "productos-box-5"
-;
-}
-
-.productos-box-1{
-    background-color:lightgoldenrodyellow;
+    grid-template-rows: repeat 5, 1fr;
+    grid-template-areas: "productos-box-1" "productos-box-2" "productos-box-3" "productos-box-4" "productos-box-5"; }
+  .productos-box-1 {
+    background-color: lightgoldenrodyellow;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-}
-.productos-box-2{
-    background-color:lightgoldenrodyellow;
+    align-items: center; }
+  .productos-box-2 {
+    background-color: lightgoldenrodyellow;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-}
-.productos-box-3{
-    background-color:lightgoldenrodyellow;
+    align-items: center; }
+  .productos-box-3 {
+    background-color: lightgoldenrodyellow;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-}
-.productos-box-4{
-    background-color:lightgoldenrodyellow;
+    align-items: center; }
+  .productos-box-4 {
+    background-color: lightgoldenrodyellow;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-}
-.productos-box-5{
-    background-color:lightgoldenrodyellow;
+    align-items: center; }
+  .productos-box-5 {
+    background-color: lightgoldenrodyellow;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-}
-.productos-destacados{
+    align-items: center; }
+  .productos-destacados {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -510,28 +332,18 @@ align-items: center;
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "productos-destacados-1"
-    "productos-destacados-2"
-    "productos-destacados-3"
-    ;
-}
-.banner{
-    background-image: url(../assets/fondodest.jpg);
-}
-.productos-destacados-1{
+    grid-template-areas: "productos-destacados-1" "productos-destacados-2" "productos-destacados-3"; }
+  .banner {
+    background-image: url(../assets/fondodest.jpg); }
+  .productos-destacados-1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.productos-destacados-2{
+    align-items: center; }
+  .productos-destacados-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.productos-destacados-3{
+    align-items: center; }
+  .productos-destacados-3 {
     display: flex;
     flex-direction: column;
-align-items: center;
-}
-}
+    align-items: center; } }
