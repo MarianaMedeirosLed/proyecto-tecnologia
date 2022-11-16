@@ -23,6 +23,8 @@ nav {
       text-decoration: none;
       color: beige;
       font-size: x-large; }
+  .nav-bar-flex .seo {
+    text-align: center; }
 
 .card-principal {
   display: flex;
@@ -46,7 +48,7 @@ nav {
   background-color: lightblue; }
 
 .main {
-  background-color: #dec6f5; }
+  background-color: lightgrey; }
 
 .buscar-productos {
   margin: 20px;

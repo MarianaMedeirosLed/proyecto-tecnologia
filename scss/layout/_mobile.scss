@@ -1,0 +1,87 @@
+@media (min-width: 768px) {
+    .header {
+    background-color: black; }
+    .nav-bar-flex {
+    margin: 0%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black; }
+    .logo-principal {
+    display: flex;
+    display: inline; }
+    .card-principal {
+    background-color: darkgray; }
+    .card-secundaria {
+    background-color: white; }
+    .contactos {
+    background-color: aliceblue; }
+    .contacto-redes, .contacto-direccion, .contacto-horarios, .contacto-pagos {
+    display: flex;
+    flex-direction: column;
+    background-color: royalblue; }
+    .contacto-direccion {
+    display: flex;
+    flex-direction: column;
+    background-color: royalblue; }
+    .contacto-horarios {
+    display: flex;
+    flex-direction: column;
+    background-color: royalblue; }
+    .contacto-pagos {
+    display: flex;
+    flex-direction: column;
+    background-color: royalblue; }
+    .productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 5, 1fr;
+    grid-template-areas: "productos-box-1" "productos-box-2" "productos-box-3" "productos-box-4" "productos-box-5"; }
+    .productos-box-1 {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .productos-box-2 {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .productos-box-3 {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .productos-box-4 {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .productos-box-5 {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .productos-destacados {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "productos-destacados-1" "productos-destacados-2" "productos-destacados-3"; }
+    .banner {
+    background-image: url(../assets/fondodest.jpg); }
+    .productos-destacados-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .productos-destacados-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .productos-destacados-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
